@@ -3,10 +3,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <title>{{ page.title }}</title>
-    <form>   
-      <input type="text" placeholder=" Search...." name="search">
-      <button type="submit">Submit</button>   
-    </form>  
+    <input id="searchbar" onkeyup="searchTitles()" type="text"
+        name="search" placeholder="Search Title..">
   </head>
   <body>
     <h1>{{ page.title }}</h1>
