@@ -1,5 +1,6 @@
 let element = document.getElementById("search").value;
-let button = document.getElementById("submit");
+let nextButton = document.getElementById("next");
+let backButton = document.getElementById("back");
 console.log('hola');
 function searchForward(text){
 window.find(text);
@@ -7,3 +8,7 @@ window.find(text);
 function searchBackward(text){
     return window.find(text,false,true,true,false);
 }
+
+nextButton.addEventListener("click",searchForward(document.getElementById('search').value));
+
+backButton.addEventListener("click",searchBackward(document.getElementById('search').value));
