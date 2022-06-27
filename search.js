@@ -1,5 +1,6 @@
 let element = document.getElementById("search").value;
 let button = document.getElementById("submit");
+console.log('hola');
 function searchForward(text){
 window.find(text);
 }
