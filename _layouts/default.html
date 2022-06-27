@@ -9,9 +9,10 @@
         <input id="search" type="text"  placeholder="Type here" />
     </form>
     <div class="btn-group">
-    <button id="next">Next</button>
-    <button id="back">Back</button>
+    <button onclick="searchForward(document.getElementById('search').value)">Next</button>
+    <button onclick="searchBackward(document.getElementById('search').value)">Back</button>
     </div>
+  </header>
   <body>
     <h1>{{ page.title }}</h1>
       <body>
