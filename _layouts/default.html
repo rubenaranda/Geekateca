@@ -3,21 +3,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <title>{{ page.title }}</title>
-    <input id="searchbar" onkeyup="searchTitles()" type="text"
-        name="search" placeholder="Search Title..">
   </head>
+  <header>
+	<form id="searchbox">
+        <input id="search" type="text"  placeholder="Type here" />
+    </form>
+    <div class="btn-group">
+    <button onclick="searchForward(document.getElementById('search').value)">Next</button>
+    <button onclick="searchBackward(document.getElementById('search').value)">Back</button>
+    </div>
   <body>
     <h1>{{ page.title }}</h1>
     <section>
       <body>
-	    <div class="container">
-		      <div class="search-box">
-			      <i class="bx bx-search"></i>
-			      <i nput type="text" placeholder="Put a word">
-		      </div>
-		      <div class="content">
-			      {{ content }}
-		      </div>
+	      <div class="container">
+		{{ content }}	      
         </div>
     </section>
   </body>
