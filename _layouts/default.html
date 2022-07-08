@@ -1,26 +1,19 @@
-<!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
-    <title>{{ page.title }}</title>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </head>
-  <header>
-	<form id="searchbox">
-        <input id="search" type="text"  placeholder="Type here" />
-    </form>
-    <div class="btn-group">
-    <button onclick="searchForward(document.getElementById('search').value)">Next</button>
-    <button onclick="searchBackward(document.getElementById('search').value)">Back</button>
-    </div>
-    <div id="google_translate_element"></div>
-  </header>
-  <body>
-    <h1>{{ page.title }}</h1>
-      <body>
-	      <div class="container">
-		{{ content }}	      
-        </div>
-  </body>
-	  <script src="search.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link rel="stylesheet" href="test.css">
+<title>Document</title>
+</head>
+<body>
+    <input id="input" type="text" placeholder="Type here...">
+    <button onclick="testSearch()" id="submit">Search</button>
+    <p>Hello there, welcome to this web page of ours! <br>
+        I hope you enjoy your experience with this web page.
+    </p>
+    <div id="google_translate_element" onclick="hiddenTranslateElementInit()"></div>
+</body>
+<script src="/scriptT.js"></script>
 </html>
